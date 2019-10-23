@@ -20,7 +20,7 @@ body {
 section {
   display: inline-block;
   grid-template-columns: 2fr 1fr;
-  margin: 1.5rem;
+  margin: 1.5rem 0;
   grid-gap: 1.5rem;
 
   /* max-width: 25em; */
@@ -29,27 +29,26 @@ section {
 }
 
 img {
-  align-content: center;
   display: block;
   width: 100%;
-  margin: auto;
+  padding-top: 1em;
 }
 
 h2 {
   font-size: 1.5em;
-  padding-top: 1em;
+  padding: 1em 0;
 }
 
 p {
-  padding-top: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .btn {
   text-decoration: none;
+  font-size: 1rem;
   border: #333 solid 3px;
-  padding: .8em;
-  border-radius: 15px;
+  padding: .4em .75em .5em;
+  border-radius: 10px;
   text-align: center;
   color: #333;
   display: inline-block;
@@ -61,7 +60,7 @@ p {
   border: #666 solid 3px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 60em) {
 
   section {
     display: grid;
@@ -73,6 +72,8 @@ p {
   img {
     display: block;
     width: 70%;
+    margin: 0;
+    padding: .4em .75em .5em;
   }
 
   #main {
